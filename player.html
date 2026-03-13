@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube | Video</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 420px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .profile {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .channel {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .views {
+            font-size: 14px;
+            color: gray;
+            margin-top: 3px;
+        }
+
+        .three-lines-button,
+        .profile-pic {
+            border-radius: 50%;
+        }
+
+        .three-lines-button:hover,
+        .profile-pic:hover {
+            filter: brightness(0.85);
+        }
+
+        .home,
+        .three-lines-button,
+        .search-image,
+        .profile-pic {
+            width: auto;
+            cursor: pointer;
+            height: 45px;
+        }
+
+        .home {
+            margin-left: 10px;
+        }
+
+        .nav-bar-div {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .home,
+        .three-lines-button,
+        .search-image,
+        .profile-pic {
+            height: 45px;
+            cursor: pointer;
+        }
+
+        .search-div {
+            display: flex;
+            align-items: center;
+            flex: 4;
+            max-width: 500px;
+        }
+
+        .input-box {
+            height: 40px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 20px;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        .search-image {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .profile-div {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar-div">
+        <div class="three-lines-div">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAclBMVEX///8wKir+/v4yKSoAAAArJibX1dQsJSU/PDuopabX1NUoJiMaERSal5hPS0ojHR0XDw/x8fH39/fj4+Pd3d14d3ezs7MJAADLy8tIRUXp6emQkJDAv76sq6wdGhgvLCpeXFtUU1NsbWwzMTKHhoZlZGQrxQZvAAADAklEQVR4nO2bbVOrMBCFl/Bi0ZaQACkFWlrF//8XbwJYvZ/uTPcw0+vso44jTJbDkobsSSQSBEEQBEEQBEEQBEFYUE8WBwlYEzecWkKYDIjhClPhqy0SKKfBB2WoCm3Pl0sEYxyjSJc56wl6UUOa4jStaMd6fMpcgXmaieNYF4ahiag+gjUFUVHScjJFQ7KJqDNDkyIHFxU45qxM4R/fLCrjiFL2qrF6Yv+jb4yOHobOIXqJ0tARYLCHBP99TnSavoCI/R2WyYEzoNP8Psia0w7IqWl9VNZrJrz9bPWKI6sszVFZsFItCIIgCMLvBjdPUKyZ1M84SywMBLpF1N19xQJE22KOx3aoFHX5bXyDkd7yjjVHnz2z+lb6cgaHLouM60/VO3A16su+D5a/4SvkBqsp1KLR5d2yElVdllDIAjmKjjUjVTRbQUsgCOPyK3GPfwJ9Q4cVFYhnK4gzLGTJEgYoyUdLBoYkIrNLoarmbpWmHT0+hPqenpf3WCjGcrZdHhQ1uxvNEepZx1F6fOd4ZouuvHjbA9Gng2Uug4QBtHY5EFc//ujWNCHnLfewTCOPkNPOjUIKgiA8LcAC+ek0yVAuBPjrYH8Fg3QubP9E9fgNPjIIVa/uAOScWd6Nhra235X7EsjHZHiFg1Lm84gu28trx9AURB003kvQPcs0o+4jxYt60RUnUdRu4rokA8MKCruCRryokWkFbZQphmnm6XTYfoMVlUYlx15UZKcLPFOjZhqxVBV4y3rH82GDP/y5LzWQ/f5aM98zYRnENQWQxvGWQdZcwUFMXeAAVOHtpN9X1DxlnbaRKP529A2QWlkQBEEQBEEQBEEQBEH4n1ntrdnR/drM+G3wfp/7cXhto9b/I6Ev527dSnA/xpPU5Yucjip136RQrVc7m1XtjyZhv79VqrZUGbI12YrIVKQy6gYTjtUDYxEyXMvaalLWKmt6O3XWWGWM/3MyyoSTfecvH877gzacmDPhrh21V1v1hlxDzUSqz8k5Mw29KVrVt/9YRP4DKTpNfbvG7eIAAAAASUVORK5CYII="
+                alt="Navigation-Button" class="three-lines-button">
+        </div>
+        <div>
+            <a href="index.html">
+                <img src="photo_2026-02-24_11-56-19.jpg" alt="Youtube-Home" class="home" title="YouTube Home">
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" placeholder="Search" class="input-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search-Button" class="search-image">
+        </div>
+        <div class="profile-div">
+            <img src="profile-pic.png" alt="Profile" class="profile-pic">
+        </div>
+    </div>
+    <div class="container">
+        <iframe id="video"></iframe>
+        <div class="title" id="title"></div>
+        <div class="info">
+            <img id="profile" class="profile">
+            <div>
+                <div class="channel" id="channel"></div>
+                <div class="views" id="views"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const data = JSON.parse(localStorage.getItem("video"));
+
+        document.getElementById("video").src = data.url;
+        document.getElementById("title").innerText = data.title;
+        document.getElementById("channel").innerText = data.channel;
+        document.getElementById("profile").src = data.profile;
+        document.getElementById("views").innerText = data.views;
+    </script>
+</body>
+
+</html>

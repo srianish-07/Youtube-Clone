@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube | Home</title>
+    <link rel="stylesheet" href="i.css">
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="nav-bar-div">
+        <div class="three-lines-div">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAclBMVEX///8wKir+/v4yKSoAAAArJibX1dQsJSU/PDuopabX1NUoJiMaERSal5hPS0ojHR0XDw/x8fH39/fj4+Pd3d14d3ezs7MJAADLy8tIRUXp6emQkJDAv76sq6wdGhgvLCpeXFtUU1NsbWwzMTKHhoZlZGQrxQZvAAADAklEQVR4nO2bbVOrMBCFl/Bi0ZaQACkFWlrF//8XbwJYvZ/uTPcw0+vso44jTJbDkobsSSQSBEEQBEEQBEEQBEFYUE8WBwlYEzecWkKYDIjhClPhqy0SKKfBB2WoCm3Pl0sEYxyjSJc56wl6UUOa4jStaMd6fMpcgXmaieNYF4ahiag+gjUFUVHScjJFQ7KJqDNDkyIHFxU45qxM4R/fLCrjiFL2qrF6Yv+jb4yOHobOIXqJ0tARYLCHBP99TnSavoCI/R2WyYEzoNP8Psia0w7IqWl9VNZrJrz9bPWKI6sszVFZsFItCIIgCMLvBjdPUKyZ1M84SywMBLpF1N19xQJE22KOx3aoFHX5bXyDkd7yjjVHnz2z+lb6cgaHLouM60/VO3A16su+D5a/4SvkBqsp1KLR5d2yElVdllDIAjmKjjUjVTRbQUsgCOPyK3GPfwJ9Q4cVFYhnK4gzLGTJEgYoyUdLBoYkIrNLoarmbpWmHT0+hPqenpf3WCjGcrZdHhQ1uxvNEepZx1F6fOd4ZouuvHjbA9Gng2Uug4QBtHY5EFc//ujWNCHnLfewTCOPkNPOjUIKgiA8LcAC+ek0yVAuBPjrYH8Fg3QubP9E9fgNPjIIVa/uAOScWd6Nhra235X7EsjHZHiFg1Lm84gu28trx9AURB003kvQPcs0o+4jxYt60RUnUdRu4rokA8MKCruCRryokWkFbZQphmnm6XTYfoMVlUYlx15UZKcLPFOjZhqxVBV4y3rH82GDP/y5LzWQ/f5aM98zYRnENQWQxvGWQdZcwUFMXeAAVOHtpN9X1DxlnbaRKP529A2QWlkQBEEQBEEQBEEQBEH4n1ntrdnR/drM+G3wfp/7cXhto9b/I6Ev527dSnA/xpPU5Yucjip136RQrVc7m1XtjyZhv79VqrZUGbI12YrIVKQy6gYTjtUDYxEyXMvaalLWKmt6O3XWWGWM/3MyyoSTfecvH877gzacmDPhrh21V1v1hlxDzUSqz8k5Mw29KVrVt/9YRP4DKTpNfbvG7eIAAAAASUVORK5CYII="
+                alt="Navigation-Button" class="three-lines-button">
+        </div>
+        <div>
+            <a href="index.html">
+                <img src="photo_2026-02-24_11-56-19.jpg" alt="Youtube-Home" class="home" title="YouTube Home">
+            </a>
+        </div>
+        <div class="search-div">
+            <input type="text" placeholder="Search" class="input-box" onkeyup="searchVideos()">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search-Button" class="search-image">
+        </div>
+        <div class="profile-div">
+            <img src="profile-pic.png" alt="Profile" class="profile-pic">
+        </div>
+    </div>
+    <div class="videos-div">
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/G3e-cpL7ofc','HTML & CSS Full Course','SuperSimpleDev ✔','https://yt3.ggpht.com/ytc/AIdro_laf9dDyNATE1_RdVUKthwnwT9TSm9N0my0jL2H8gCvjw=s88-c-k-c0x00ffffff-no-rj','18M views · 4 years ago')">
+                    <img src="https://i.ytimg.com/vi/G3e-cpL7ofc/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img
+                        src="https://yt3.ggpht.com/ytc/AIdro_laf9dDyNATE1_RdVUKthwnwT9TSm9N0my0jL2H8gCvjw=s88-c-k-c0x00ffffff-no-rj" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">HTML & CSS Full Course</a>
+                    <a href="#" class="channel-name">SuperSimpleDev ✔</a>
+                    <p class="video-meta">18M views · 4 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/kUMe1FH4CHE','JavaScript Tutorial','Programming with Mosh ✔','https://randomuser.me/api/portraits/men/11.jpg','12M views · 3 years ago')">
+                    <img src="https://i.ytimg.com/vi/kUMe1FH4CHE/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img
+                        src="https://randomuser.me/api/portraits/men/11.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">JavaScript Tutorial</a>
+                    <a href="#" class="channel-name">Programming with Mosh ✔</a>
+                    <p class="video-meta">12M views · 3 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/rfscVS0vtbw','Python Programming Course','freeCodeCamp ✔','https://randomuser.me/api/portraits/men/22.jpg','45M views · 5 years ago')">
+                    <img src="https://i.ytimg.com/vi/rfscVS0vtbw/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">Python Programming Course</a>
+                    <a href="#" class="channel-name">freeCodeCamp ✔</a>
+                    <p class="video-meta">45M views · 5 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/7CqJlxBYj-M','Java Full Course','Bro Code ✔','https://randomuser.me/api/portraits/men/35.jpg','9M views · 2 years ago')">
+                    <img src="https://i.ytimg.com/vi/7CqJlxBYj-M/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">Java Full Course</a>
+                    <a href="#" class="channel-name">Bro Code ✔</a>
+                    <p class="video-meta">9M views · 2 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/zOjov-2OZ0E','React JS Crash Course','Traversy Media ✔','https://randomuser.me/api/portraits/men/48.jpg','6M views · 3 years ago')">
+                    <img src="https://i.ytimg.com/vi/zOjov-2OZ0E/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">React JS Crash Course</a>
+                    <a href="#" class="channel-name">Traversy Media ✔</a>
+                    <p class="video-meta">6M views · 3 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/1Rs2ND1ryYc','Node.js Tutorial','The Net Ninja ✔','https://randomuser.me/api/portraits/men/63.jpg','5M views · 3 years ago')">
+                    <img src="https://i.ytimg.com/vi/1Rs2ND1ryYc/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/men/63.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">Node.js Tutorial</a>
+                    <a href="#" class="channel-name">The Net Ninja ✔</a>
+                    <p class="video-meta">5M views · 3 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/Ke90Tje7VS0','React Tutorial for Beginners','Programming with Mosh ✔','https://randomuser.me/api/portraits/women/56.jpg','7M views · 4 years ago')">
+                    <img src="https://i.ytimg.com/vi/Ke90Tje7VS0/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img
+                        src="https://randomuser.me/api/portraits/women/56.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">React Tutorial for Beginners</a>
+                    <a href="#" class="channel-name">Programming with Mosh ✔</a>
+                    <p class="video-meta">7M views · 4 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/t_ispmWmdjY','C Programming Tutorial','CodeWithHarry ✔','https://randomuser.me/api/portraits/women/44.jpg','8M views · 3 years ago')">
+                    <img src="https://i.ytimg.com/vi/t_ispmWmdjY/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">C Programming Tutorial</a>
+                    <a href="#" class="channel-name">CodeWithHarry ✔</a>
+                    <p class="video-meta">8M views · 3 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/3PHXvlpOkf4','Data Structures in Java','Apna College ✔','https://randomuser.me/api/portraits/women/68.jpg','10M views · 2 years ago')">
+                    <img src="https://i.ytimg.com/vi/3PHXvlpOkf4/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Profile-pic">
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">Data Structures in Java</a>
+                    <a href="#" class="channel-name">Apna College ✔</a>
+                    <p class="video-meta">10M views · 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="one-video-div">
+            <div class="video-img-div">
+                <a href="#"
+                    onclick="openVideo('https://www.youtube.com/embed/9bZkp7q19f0','Learn Git & GitHub','freeCodeCamp ✔','https://randomuser.me/api/portraits/women/27.jpg','4M views · 2 years ago')">
+                    <img src="https://i.ytimg.com/vi/9bZkp7q19f0/hq720.jpg" class="thumbnail-img" loading="lazy">
+                </a>
+            </div>
+            <div class="vid-info-div">
+                <div class="profile-img">
+                    <img src="https://randomuser.me/api/portraits/women/27.jpg" alt="Profile-pic"> 
+                </div>
+                <div class="text-info">
+                    <a href="#" class="video-title">Learn Git & GitHub</a>
+                    <a href="#" class="channel-name">freeCodeCamp ✔</a>
+                    <p class="video-meta">4M views · 2 years ago</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function openVideo(url, title, channel, profile, views) {
+            const videoData = {
+                url: url,
+                title: title,
+                channel: channel,
+                profile: profile,
+                views: views
+            };
+            localStorage.setItem("video", JSON.stringify(videoData));
+            window.location.href = "player.html";
+        }
+        function searchVideos() {
+    let input = document.querySelector(".input-box").value.toLowerCase();
+    let videos = document.querySelectorAll(".one-video-div");
+
+    videos.forEach(function(video) {
+        let title = video.querySelector(".video-title").innerText.toLowerCase();
+
+        if (title.includes(input)) {
+            video.style.display = "block";
+        } else {
+            video.style.display = "none";
+        }
+    });
+}
+    </script>
+</body>
+</html>
